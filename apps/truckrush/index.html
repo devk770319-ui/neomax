@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>트럭러시 (Truck Rush) — NeoMax</title>
+<meta name="description" content="스와이프로 박스를 던져 트럭 짐칸을 채우는 캐주얼 물리 게임. 얼마나 세게 쓸었느냐가 그대로 날아가는 거리가 됩니다. 제한 시간 안에 짐칸을 목표만큼 채우면 트럭이 출발합니다. 규칙은 이것 하나뿐입니다.">
+<meta name="theme-color" content="#06070a">
+<link rel="canonical" href="https://devk770319-ui.github.io/neomax/apps/truckrush/">
+<link rel="icon" href="../../assets/img/brand/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/img/brand/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NeoMax">
+<meta property="og:title" content="트럭러시 (Truck Rush) — NeoMax">
+<meta property="og:description" content="스와이프로 박스를 던져 트럭 짐칸을 채우는 캐주얼 물리 게임. 얼마나 세게 쓸었느냐가 그대로 날아가는 거리가 됩니다. 제한 시간 안에 짐칸을 목표만큼 채우면 트럭이 출발합니다. 규칙은 이것 하나뿐입니다.">
+<meta property="og:url" content="https://devk770319-ui.github.io/neomax/apps/truckrush/">
+<meta property="og:image" content="https://devk770319-ui.github.io/neomax/assets/img/brand/og.png">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../../assets/css/style.css?v=20261009">
+<script>document.documentElement.classList.add('js')</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "트럭러시", "alternateName": "Truck Rush", "operatingSystem": "ANDROID", "applicationCategory": "GameApplication", "description": "스와이프로 박스를 던져 트럭 짐칸을 채우는 캐주얼 물리 게임", "author": {"@type": "Organization", "name": "NeoMax"}, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}, "installUrl": "https://play.google.com/store/apps/details?id=com.neomax.truckrush"}</script>
+</head>
+<body style="--g1:rgba(255, 138, 31, 0.3);--g2:rgba(46, 107, 255, 0.2);--tint:#FFB574;--g3:rgba(255, 181, 116, 0.1);--g4:rgba(255, 181, 116, 0.22)">
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../../" aria-label="NeoMax 홈">
+      <img src="../../assets/img/brand/favicon.svg" alt="" width="30" height="30">NeoMax
+    </a>
+    <nav class="nav-links" aria-label="주요 메뉴">
+      <a href="../../#apps">앱</a>
+      <a href="../../#upcoming">개발 중</a>
+      <a href="../../#studio">스튜디오</a>
+      <a href="../../#contact">문의</a>
+    </nav>
+    <div class="nav-right">
+      <a class="btn btn-ghost btn-sm" href="https://play.google.com/store/apps/developer?id=NeoMax" target="_blank" rel="noopener">Google Play <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a>
+      <button class="menu-btn" type="button" aria-label="메뉴 열기" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="mobile-menu">
+  <a href="../../#apps">앱</a>
+  <a href="../../#upcoming">개발 중</a>
+  <a href="../../#studio">스튜디오</a>
+  <a href="../../#contact">문의</a>
+  <a class="btn btn-primary" href="https://play.google.com/store/apps/developer?id=NeoMax" target="_blank" rel="noopener">Google Play에서 보기 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a>
+</div>
+<main>
+<section class="app-hero">
+  <div class="app-hero-bg" aria-hidden="true"></div>
+  <div class="container">
+    <nav class="breadcrumb" aria-label="위치"><a href="../../">NeoMax</a><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg><a href="../../#apps">앱</a><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg><span>트럭러시</span></nav>
+    <div class="app-hero-grid">
+      <div>
+        <div class="reveal"><img class="app-icon" src="../../assets/img/icons/truckrush.webp" alt="트럭러시 아이콘" width="116" height="116" decoding="async"></div>
+        <h1 class="reveal" data-d="1">트럭러시</h1>
+        <p class="en reveal" data-d="1">Truck Rush · 캐주얼 게임</p>
+        <div class="tags reveal" data-d="2"><span class="tag status live">Google Play 출시</span><span class="tag">캐주얼</span><span class="tag">물리 퍼즐</span><span class="tag">오프라인</span></div>
+        <p class="lead reveal" data-d="2">얼마나 세게 쓸었느냐가 그대로 날아가는 거리가 됩니다. 제한 시간 안에 짐칸을 목표만큼 채우면 트럭이 출발합니다. 규칙은 이것 하나뿐입니다.</p>
+        <div class="cta-row reveal" data-d="3"><a class="play-badge" href="https://play.google.com/store/apps/details?id=com.neomax.truckrush" target="_blank" rel="noopener" aria-label="Google Play에서 트럭러시 다운로드"><img src="../../assets/img/brand/google-play-badge-ko.png" alt="Google Play에서 다운로드" width="646" height="192"></a><a class="btn btn-ghost" href="#features">주요 기능 보기</a></div>
+        <div class="meta-strip reveal" data-d="4"><div><small>가격</small><b>무료</b></div><div><small>인앱 구매</small><b>있음</b></div><div><small>광고</small><b>포함</b></div><div><small>이용 등급</small><b>전체이용가</b></div></div>
+      </div>
+      <div class="app-hero-visual reveal" data-d="2" aria-hidden="true"><div class="phone pb"><img src="../../assets/img/shots/truckrush-02.webp" alt="트럭러시 스크린샷 2" width="600" height="1166" decoding="async"></div><div class="phone pa"><img src="../../assets/img/shots/truckrush-01.webp" alt="트럭러시 스크린샷 1" width="600" height="1166" decoding="async"></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:40px">
+  <div class="container">
+    <div class="head-row reveal" style="margin-bottom:40px">
+      <div class="section-head">
+        <span class="eyebrow">Screenshots</span>
+        <h2 class="title">쓸어 올리면,<br>박스가 날아간다.</h2>
+      </div>
+      <div class="gallery-nav" data-gallery-target="gal"><a class="btn btn-ghost btn-sm" href="https://play.google.com/store/apps/details?id=com.neomax.truckrush" target="_blank" rel="noopener">Google Play에서 받기 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a>
+        <button class="icon-btn" type="button" data-dir="prev" aria-label="이전"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
+        <button class="icon-btn" type="button" data-dir="next" aria-label="다음"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+      </div>
+    </div>
+    <div class="gallery-wrap reveal" id="gal" data-gallery><div class="gallery"><button class="shot" type="button" aria-label="스크린샷 1 크게 보기"><div class="phone"><img src="../../assets/img/shots/truckrush-01.webp" alt="트럭러시 스크린샷 1" width="600" height="1166" loading="lazy" decoding="async"></div></button><button class="shot" type="button" aria-label="스크린샷 2 크게 보기"><div class="phone"><img src="../../assets/img/shots/truckrush-02.webp" alt="트럭러시 스크린샷 2" width="600" height="1166" loading="lazy" decoding="async"></div></button><button class="shot" type="button" aria-label="스크린샷 3 크게 보기"><div class="phone"><img src="../../assets/img/shots/truckrush-03.webp" alt="트럭러시 스크린샷 3" width="600" height="1166" loading="lazy" decoding="async"></div></button><button class="shot" type="button" aria-label="스크린샷 4 크게 보기"><div class="phone"><img src="../../assets/img/shots/truckrush-04.webp" alt="트럭러시 스크린샷 4" width="600" height="1166" loading="lazy" decoding="async"></div></button><button class="shot" type="button" aria-label="스크린샷 5 크게 보기"><div class="phone"><img src="../../assets/img/shots/truckrush-05.webp" alt="트럭러시 스크린샷 5" width="600" height="1166" loading="lazy" decoding="async"></div></button><button class="shot" type="button" aria-label="스크린샷 6 크게 보기"><div class="phone"><img src="../../assets/img/shots/truckrush-06.webp" alt="트럭러시 스크린샷 6" width="600" height="1166" loading="lazy" decoding="async"></div></button><button class="shot" type="button" aria-label="스크린샷 7 크게 보기"><div class="phone"><img src="../../assets/img/shots/truckrush-07.webp" alt="트럭러시 스크린샷 7" width="600" height="1166" loading="lazy" decoding="async"></div></button></div></div>
+  </div>
+</section>
+
+<section class="section" id="features" style="padding-top:0">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Features</span>
+      <h2 class="title">이런 점이 다릅니다.</h2>
+    </div>
+    <div class="features"><div class="f-card reveal" data-d="1"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 11V6a2 2 0 0 0-4 0v5"/><path d="M14 10V4a2 2 0 0 0-4 0v6"/><path d="M10 10.5V6a2 2 0 0 0-4 0v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/></svg></div><h3>손가락 하나로 끝나는 물리 액션</h3><p>화면을 위로 쓸어 올리면 박스가 날아갑니다. 얼마나 세게 쓸었느냐가 그대로 날아가는 거리가 됩니다.</p></div><div class="f-card reveal" data-d="2"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="5" r="3"/><path d="M6.5 8a2 2 0 0 0-1.905 1.46L2.1 18.5A2 2 0 0 0 4 21h16a2 2 0 0 0 1.925-2.54L19.4 9.5A2 2 0 0 0 17.48 8Z"/></svg></div><h3>색이 곧 무게</h3><p>황토색 박스는 가볍고, 빨간 박스는 무겁고, 검은 박스는 훨씬 무겁습니다. 같은 힘이라도 색에 따라 거리가 달라집니다.</p></div><div class="f-card reveal" data-d="3"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></svg></div><h3>60개 스테이지</h3><p>10스테이지부터는 트럭이 앞뒤로 움직이며 사거리가 계속 변합니다. 익숙해질 무렵 게임이 다시 어려워집니다.</p></div><div class="f-card reveal" data-d="1"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="10" x2="14" y1="2" y2="2"/><line x1="12" x2="15" y1="14" y2="11"/><circle cx="12" cy="14" r="8"/></svg></div><h3>던질수록 늘어나는 시간</h3><p>연속으로 성공하면 점수 배수와 남은 시간이 함께 늘어납니다. 3연속 x2, 5연속 x3, 10연속 x5.</p></div><div class="f-card reveal" data-d="2"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg></div><h3>별을 모아 트럭 업그레이드</h3><p>빨리 깰수록 별을 많이 받습니다. 고무 매트, 쿠션 적재함, 에어 서스펜션으로 튕겨 나가는 박스를 줄이세요.</p></div><div class="f-card reveal" data-d="3"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"/></svg></div><h3>럭키 박스</h3><p>가끔 물음표가 붙은 금색 박스가 섞여 나옵니다. 짐칸에 넣으면 시간이 늘거나 점수가 크게 오릅니다.</p></div></div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="container info-grid">
+    <div class="stack"><div class="panel reveal"><h3>광고와 결제 안내</h3><ul class="note-list"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg><span>보상형 광고(별 받기, 짐 정리, 럭키 박스, 이어하기)는 원할 때만 보시면 됩니다.</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg><span>전면 광고는 게임이 끝난 뒤에만, 두 판에 한 번 나옵니다. 플레이 도중에는 나오지 않습니다.</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg><span>앱 안에서 ‘광고 제거’를 구매하면 전면 광고가 나오지 않습니다.</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg><span>회원가입이나 로그인은 없습니다. 기록은 기기에만 저장됩니다.</span></li></ul></div></div>
+    <div class="panel reveal" data-d="1"><h3>앱 정보</h3><dl class="info-table"><div><dt>개발사</dt><dd>NeoMax</dd></div><div><dt>카테고리</dt><dd>캐주얼 게임</dd></div><div><dt>최근 업데이트</dt><dd>2026. 10. 8.</dd></div><div><dt>지원 기기</dt><dd>Android</dd></div><div><dt>개인정보처리방침</dt><dd><a href="https://devk770319-ui.github.io/truckrush-privacy/" target="_blank" rel="noopener">보기</a></dd></div><div><dt>문의</dt><dd><a href="mailto:neomax.support@gmail.com">neomax.support@gmail.com</a></dd></div></dl></div>
+  </div>
+</section>
+<section class="section" style="padding-top:0"><div class="container"><div class="cta-band reveal"><div class="left"><img class="app-icon" src="../../assets/img/icons/truckrush.webp" alt="트럭러시 아이콘" width="84" height="84" loading="lazy" decoding="async"><div><h2>지금 트럭러시을(를) 시작해 보세요.</h2><p>Google Play에서 무료로 받을 수 있어요.</p></div></div><a class="play-badge" href="https://play.google.com/store/apps/details?id=com.neomax.truckrush" target="_blank" rel="noopener" aria-label="Google Play에서 트럭러시 다운로드"><img src="../../assets/img/brand/google-play-badge-ko.png" alt="Google Play에서 다운로드" width="646" height="192"></a></div></div></section>
+
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="section-head reveal" style="margin-bottom:36px">
+      <span class="eyebrow">More from NeoMax</span>
+      <h2 class="title" style="font-size:clamp(28px,3vw,40px)">NeoMax의 다른 앱</h2>
+    </div>
+    <div class="others reveal"><a class="o-card" href="../../apps/harukan/"><img class="app-icon" src="../../assets/img/icons/harukan.webp" alt="하루칸 아이콘" width="68" height="68" loading="lazy" decoding="async"><b>하루칸</b><span class="tag status live">Google Play 출시</span></a><a class="o-card" href="../../apps/golfrush/"><img class="app-icon" src="../../assets/img/icons/golfrush.webp" alt="골프러쉬 아이콘" width="68" height="68" loading="lazy" decoding="async"><b>골프러쉬</b><span class="tag status live">Google Play 출시</span></a><a class="o-card" href="../../apps/yobung/"><img class="app-icon" src="../../assets/img/icons/yobung.webp" alt="요붕디펜스 아이콘" width="68" height="68" loading="lazy" decoding="async"><b>요붕디펜스</b><span class="tag status review">출시 준비 중</span></a><a class="o-card" href="../../apps/guimoon/"><img class="app-icon" src="../../assets/img/icons/guimoon.webp" alt="귀문진 아이콘" width="68" height="68" loading="lazy" decoding="async"><b>귀문진</b><span class="tag status beta">비공개 테스트</span></a><a class="o-card" href="../../apps/challenger18/"><img class="app-icon" src="../../assets/img/icons/challenger18.webp" alt="챌린저 18 아이콘" width="68" height="68" loading="lazy" decoding="async"><b>챌린저 18</b><span class="tag status beta">비공개 테스트</span></a><a class="o-card" href="../../apps/icare/"><img class="app-icon" src="../../assets/img/icons/icare.svg" alt="i케어 아이콘" width="68" height="68" loading="lazy" decoding="async"><b>i케어</b><span class="tag status dev">개발 중</span></a></div>
+  </div>
+</section>
+</main>
+<div class="lightbox" role="dialog" aria-modal="true" aria-label="스크린샷 보기">
+  <button class="icon-btn lb-close" type="button" aria-label="닫기"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>
+  <button class="icon-btn lb-prev" type="button" aria-label="이전"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
+  <img src="" alt="">
+  <button class="icon-btn lb-next" type="button" aria-label="다음"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+  <span class="lb-count"></span>
+</div>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="../../"><img src="../../assets/img/brand/favicon.svg" alt="" width="30" height="30">NeoMax</a>
+        <p class="about">한 손으로 가볍게 즐기는 모바일 게임과, 매일을 조용히 돕는 앱을 만드는 작은 스튜디오입니다.</p>
+      </div>
+      <div>
+        <h4>출시된 앱</h4>
+        <ul><li><a href="../../apps/truckrush/">트럭러시</a></li>
+<li><a href="../../apps/harukan/">하루칸</a></li>
+<li><a href="../../apps/golfrush/">골프러쉬</a></li></ul>
+      </div>
+      <div>
+        <h4>개발 중</h4>
+        <ul><li><a href="../../apps/yobung/">요붕디펜스</a></li>
+<li><a href="../../apps/guimoon/">귀문진</a></li>
+<li><a href="../../apps/challenger18/">챌린저 18</a></li>
+<li><a href="../../apps/icare/">i케어</a></li></ul>
+      </div>
+      <div>
+        <h4>지원</h4>
+        <ul>
+          <li><a href="mailto:neomax.support@gmail.com">문의하기</a></li>
+          <li><a href="../../privacy/">개인정보처리방침</a></li>
+          <li><a href="https://play.google.com/store/apps/developer?id=NeoMax" target="_blank" rel="noopener">Google Play 개발자 페이지</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> NeoMax. All rights reserved.</span>
+      <span>Google Play 및 Google Play 로고는 Google LLC의 상표입니다.</span>
+    </div>
+  </div>
+</footer>
+<script src="../../assets/js/main.js?v=20261009" defer></script>
+</body>
+</html>
